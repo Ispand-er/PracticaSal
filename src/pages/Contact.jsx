@@ -6,38 +6,34 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Имитация успешной отправки формы
     setSubmitted(true);
   };
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.mainTitle}>Обратная связь</h1>
-      <p className={styles.subtitle}>Оставьте заявку, и мы свяжемся с вами в течение рабочего дня.</p>
+      <h1 className={styles.mainTitle}>Быстрый заказ</h1>
+      <p className={styles.subtitle}>Заполните форму, и мы начнем готовить ваш заказ немедленно!</p>
 
       {submitted ? (
         <div className={styles.successMessage} role="alert">
-          <h3>✅ Спасибо за обращение!</h3>
-          <p>Ваша заявка успешно принята. Наш менеджер уже изучает информацию.</p>
+          <h3>🔥 Заказ принят!</h3>
+          <p>Курьер уже выезжает. Ожидайте звонка для подтверждения.</p>
         </div>
       ) : (
         <form className={styles.contactForm} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="userName">Ваше имя *</label>
-            <input type="text" id="userName" name="userName" required placeholder="Иван Иванов" />
+            <input type="text" id="userName" required placeholder="Александр" />
           </div>
-
           <div className={styles.formGroup}>
-            <label htmlFor="userEmail">Электронная почта *</label>
-            <input type="email" id="userEmail" name="userEmail" required placeholder="example@mail.com" />
+            <label htmlFor="userPhone">Номер телефона *</label>
+            <input type="tel" id="userPhone" required placeholder="+7 (999) 123-45-67" />
           </div>
-
           <div className={styles.formGroup}>
-            <label htmlFor="userMessage">Сообщение</label>
-            <textarea id="userMessage" name="userMessage" rows="5" placeholder="Опишите ваш проект..."></textarea>
+            <label htmlFor="userMessage">Адрес доставки и комментарий</label>
+            <textarea id="userMessage" rows="3" placeholder="Улица Пушкина, дом 10, кв 4. Подъезд 2. Домофон 4К..."></textarea>
           </div>
-
-          <button type="submit" className={styles.submitBtn}>Отправить заявку</button>
+          <button type="submit" className={styles.submitBtn}>Оформить доставку</button>
         </form>
       )}
     </div>

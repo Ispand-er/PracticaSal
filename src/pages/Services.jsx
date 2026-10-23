@@ -3,23 +3,21 @@ import styles from './pages.module.css';
 function Services() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.mainTitle}>Наши услуги</h1>
-      <p className={styles.subtitle}>Помогаем бизнесу расти и развиваться в цифровой среде.</p>
+      <h1 className={styles.mainTitle}>Наш сервис для вас</h1>
+      <p className={styles.subtitle}>Заботимся о качестве каждого заказа от кухни до вашей двери.</p>
 
       <div className={styles.servicesGrid}>
         <article className={styles.serviceItem}>
-          <h3>Разработка на React</h3>
-          <p>Создание современных SPA (Single Page Applications) любой сложности с использованием React Router и стейт-менеджеров.</p>
+          <h3>🚀 Экспресс-доставка</h3>
+          <p>Доставляем еду в специальных термосумках. Всё приедет горячим в течение 30-45 минут.</p>
         </article>
-
         <article className={styles.serviceItem}>
-          <h3>Оптимизация производительности</h3>
-          <p>Аудит существующего кода, исправление задержек рендеринга и вывод показателей Lighthouse в «зеленую зону» (90+).</p>
+          <h3>👨‍🍳 Собственное производство</h3>
+          <p>Никаких полуфабрикатов. Готовим исключительно из-под ножа сразу после получения заказа.</p>
         </article>
-
         <article className={styles.serviceItem}>
-          <h3>Интеграция API и Backend</h3>
-          <p>Настройка безопасного обмена данными между вашим интерфейсом и серверной частью (REST API, GraphQL, WebSockets).</p>
+          <h3>🎉 Кейтеринг и праздники</h3>
+          <p>Приготовим и доставим праздничные сеты и фуршетные блюда на любое ваше мероприятие.</p>
         </article>
       </div>
     </div>

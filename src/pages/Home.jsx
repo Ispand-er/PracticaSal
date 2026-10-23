@@ -3,30 +3,29 @@ import styles from './pages.module.css';
 function Home() {
   return (
     <div className={styles.container}>
-      <section className={styles.heroSection}>
-        <h1 className={styles.mainTitle}>Создаем будущее веб-разработки</h1>
-        <p className={styles.subtitle}>
-          Современный быстрый стек технологий, чистый код и идеальные технические показатели производительности.
-        </p>
-      </section>
+      <h1 className={styles.mainTitle}>Быстрая доставка горячей еды</h1>
+      <p className={styles.subtitle}>Шедевры кулинарии прямиком из печи к вашему столу за 30 минут.</p>
 
-      <section className={styles.featuresSection}>
-        <h2 className={styles.sectionTitle}>Наши главные приоритеты</h2>
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <h3>Высокая скорость</h3>
-            <p>Загрузка страниц происходит моментально благодаря сборщику Vite и сжатию ресурсов.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Доступность</h3>
-            <p>Сайт полностью соответствует стандартам WCAG и доступен для скринридеров.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>SEO оптимизация</h3>
-            <p>Правильная структура заголовков и семантика позволяют поисковым роботам легко индексировать контент.</p>
-          </div>
+      <div className={styles.grid}>
+        <div className={styles.card}>
+          <div className={styles.placeholderImg}>🍕 Пицца Маргарита</div>
+          <h3>Пицца Маргарита</h3>
+          <p>Сочные томаты, нежная моцарелла, итальянские травы и фирменный соус на тонком тесте.</p>
+          <button className={styles.orderBtn}>В корзину — 490 ₽</button>
         </div>
-      </section>
+        <div className={styles.card}>
+          <div className={styles.placeholderImg}>🍔 Бургер Шеф-Бэкон</div>
+          <h3>Бургер Шеф-Бэкон</h3>
+          <p>Котлета из мраморной говядины, хрустящий бекон, сыр чеддер и луковый конфитюр.</p>
+          <button className={styles.orderBtn}>В корзину — 380 ₽</button>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.placeholderImg}>🍜 Рамен с курицей</div>
+          <h3>Рамен с курицей</h3>
+          <p>Наваристый куриный бульон, пшеничная лапша, маринованное яйцо и свежая зелень.</p>
+          <button className={styles.orderBtn}>В корзину — 420 ₽</button>
+        </div>
+      </div>
     </div>
   );
 }
